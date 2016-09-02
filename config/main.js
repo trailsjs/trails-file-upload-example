@@ -19,9 +19,9 @@ module.exports = {
     require('trailpack-core'),
     require('trailpack-repl'),
     require('trailpack-router'),
-    require('trailpack-express'), 
-require('trailpack-sequelize'), 
-require('trailpack-footprints')
+    require('trailpack-express'),
+    require('trailpack-sequelize'),
+    require('trailpack-footprints')
   ],
 
   /**
@@ -29,6 +29,7 @@ require('trailpack-footprints')
    */
   paths: {
     root: path.resolve(__dirname, '..'),
+    www: path.resolve(__dirname, '..', 'public'),
     temp: path.resolve(__dirname, '..', '.tmp')
   }
 }

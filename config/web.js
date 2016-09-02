@@ -9,6 +9,7 @@
  * @see {@link http://trailsjs.io/doc/config/web}
  */
 module.exports = {
+
   express: require('express'),
 
   /**
@@ -78,14 +79,12 @@ module.exports = {
   /**
    * Alternate method to add multiple template engine, for single view template use config.views.engine
    */
-  /*
-  views: {
-    engines: {
-      // html: require('some-view-engine')
-    },
-    path: 'views'
-  },
-  */
+  // views: {
+  //   engines: {
+  //     html: require('handlebars')
+  //   },
+  //   path: 'views'
+  // }
 
   /**
    * SSL options

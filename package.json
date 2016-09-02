@@ -1,22 +1,25 @@
 {
   "name": "trails-file-upload-example",
   "version": "0.0.0",
-  "description": "An example application describing how to upload a file to a Trails app.",
+  "description": "An example application that describes how to handle file uploads in a Trails app.",
   "homepage": "http://trailsjs.io",
   "author": {
     "name": "langateam",
-    "email": "wbprice@langa.io",
+    "email": "hello@langa.io",
     "url": "http://langa.io/"
   },
   "main": "index.js",
   "keywords": [
+    "NodeJS",
     "TrailsJS",
-    "file upload",
+    "upload",
+    "file",
     "trails",
     "trailsjs"
   ],
   "dependencies": {
-    "express": "^5.0.0-alpha.2",
+    "express": "^4.14.0",
+    "handlebars": "^4.0.5",
     "trailpack-core": "^1.0.0-beta-3",
     "trailpack-express": "^1.0.14",
     "trailpack-footprints": "^1.0.1",
