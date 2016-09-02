@@ -2,10 +2,47 @@
 
   <head>
     <title>Upload File Example</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="/main.css">
   </head>
 
   <body>
-    <h1>Yo, static HTML file.</h1>
+
+    <section class="pure-g content">
+
+      <div class="pure-u-1">
+
+        <h1>Upload File Example</h1>
+
+        <form class="pure-form pure-form-stacked">
+          <fieldset>
+            <legend>A Stacked Form</legend>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email">
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password">
+
+            <label for="state">State</label>
+            <select id="state">
+                <option>AL</option>
+                <option>CA</option>
+                <option>IL</option>
+            </select>
+
+            <label for="remember" class="pure-checkbox">
+                <input id="remember" type="checkbox"> Remember me
+            </label>
+
+            <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+          </fieldset>
+        </form>
+
+      </div>
+
+    </section>
+
   </body>
 
 </html>

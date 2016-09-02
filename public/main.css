@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('/bg.png');
+}
+
+.content {
+  width: 540px;
+  margin: 0 auto;
+  margin-top: 72px;
+  background: white;
+  border-radius: 24px;
+  padding: 0 1em;
+}
