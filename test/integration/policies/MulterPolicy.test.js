@@ -3,8 +3,8 @@
 
 const assert = require('assert')
 
-describe('UploadService', () => {
+describe('MessagePolicy', () => {
   it('should exist', () => {
-    assert(global.app.api.services['UploadService'])
+    assert(global.app.api.policies['MessagePolicy'])
   })
 })

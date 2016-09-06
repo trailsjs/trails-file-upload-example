@@ -10,7 +10,6 @@
  */
 
 const bodyParser = require('body-parser')
-const multer = require('multer')
 
 module.exports = {
 

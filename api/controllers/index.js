@@ -2,4 +2,4 @@
 
 exports.DefaultController = require('./DefaultController')
 exports.ViewController = require('./ViewController')
-exports.UploadController = require('./UploadController')
+exports.MessageController = require('./MessageController')

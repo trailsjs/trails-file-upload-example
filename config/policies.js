@@ -16,6 +16,10 @@ module.exports = {
 
   DefaultController: {
     info: [ ]
+  },
+
+  MessageController: {
+    send: [ 'MessagePolicy.single' ]
   }
 
 }
