@@ -8,6 +8,10 @@
  *
  * @see {@link http://trailsjs.io/doc/config/web}
  */
+
+const bodyParser = require('body-parser')
+const multer = require('multer')
+
 module.exports = {
 
   express: require('express'),
@@ -24,28 +28,26 @@ module.exports = {
    */
   middlewares: {
 
-    /*
-    //middlewares loading order
     order: [
-     'addMethods',
-     'cookieParser',
-     'session',
-     'bodyParser',
-     'compression',
-     'methodOverride',
-     'www',
-     'router',
-     '404',
-     '500'
-    ]*/
+      'addMethods',
+      'cookieParser',
+      'session',
+      'bodyParser',
+      'multer',
+      'compression',
+      'methodOverride',
+      'www',
+      'router',
+      '404',
+      '500'
+    ],
 
     /**
-     * Middlewares to load for body parsing
+     * Middlewares to load for body parsing */
     bodyParser: [
       bodyParser.json(),
       bodyParser.urlencoded({extended: false})
     ]
-     */
 
   },
 

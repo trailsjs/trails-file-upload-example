@@ -3,8 +3,8 @@
 
 const assert = require('assert')
 
-describe('FileController', () => {
+describe('UploadController', () => {
   it('should exist', () => {
-    assert(global.app.api.controllers['FileController'])
+    assert(global.app.api.controllers['UploadController'])
   })
 })

@@ -10,11 +10,14 @@ module.exports = class FileController extends Controller {
 
   upload (req, res) {
 
-    this.log.info('the file? ')
+    this.log.info('the body? ')
     this.log.info(req.body)
+    this.log.info('the files? ')
     this.log.info(req.files)
+    this.log.info('the file?')
+    this.log.info(req.file)
 
-    res.send(200)
+    res.sendStatus(200)
 
     // this.app.services.FileService.upload(file)
     // .then(() => {
