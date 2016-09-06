@@ -33,7 +33,6 @@ module.exports = {
       'cookieParser',
       'session',
       'bodyParser',
-      'multer',
       'compression',
       'methodOverride',
       'www',
