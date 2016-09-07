@@ -86,9 +86,8 @@ The result is that once the request object has arrived at `MessageController#sen
 
 ```js
   // api/controllers/MessageController.js
-
+module.exports = class MessageController extends Controller {
   ...
-
     send (req, res) {
 
     this.log.info('Form Body')
@@ -105,7 +104,7 @@ The result is that once the request object has arrived at `MessageController#sen
     })
 
   }
-
   ...
+}
 
 ```
