@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('/bg.png');
+}
+
+.content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 96px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  position: relative;
+  margin: 0 1em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card .card-header {
+  background: #63A87B;
+  color: white;
+  padding: .5em 1em;
+}
+
+.card .card-header.card-header-info {
+  background: black;
+}
+
+.card .card-header h2 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.card .card-body {
+  padding: 1em;
+}
+
+.card .card-body .card-body-row {
+  margin-bottom: 1em;
+}
+
+form {
+  margin: 0;
+}
+
+label {
+  font-weight: 700;
+}
+
+.pure-button-primary {
+  background: #3A5566;
+}
+
+/* Header Styles */
+.home-menu {
+  background: #3A5566;
+}
+
+.home-menu .pure-menu-heading {
+  font-size: 1.25em;
+  padding: 1em;
+  color: white;
+  text-transform: none;
+}
+
+/* New Email Styles */
+.new-email form {}
+
+.new-email fieldset {
+  padding: 0;
+}
+
+.new-email.card form input, .new-email.card form textarea {
+  margin-bottom: 1em !important;
+}

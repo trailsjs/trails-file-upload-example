@@ -1,0 +1,100 @@
+<html>
+
+  <head>
+    <title>TrailsMail - New Message</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="/main.css">
+  </head>
+
+  <body>
+
+    <div class="header">
+      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading">TrailsMail</a>
+      </div>
+    </div>
+
+    <section class="pure-g content">
+
+        <div class="pure-u-1-2">
+
+          <div class="new-email card">
+
+            <div class="card-header">
+              <h2>New Message</h2>
+            </div>
+
+            <div class="card-body">
+              <form class="pure-form pure-form-stacked" action="/upload" method="post" enctype="multipart/form-data">
+                <fieldset>
+                  <label for="recipient">Recipient</label>
+                  <input name="recipient" id="recipient" type="email" placeholder="Email">
+
+                  <label for="subject">Subject Line</label>
+                  <input name="subject" id="subject" type="text" placeholder="Subject Line">
+
+                  <label for="message">Message</label>
+                  <textarea name="message" rows="5" cols="40" placeholder="Your message here"></textarea>
+
+                  <label for="subject">Attachment<label>
+                  <input name="file" type="file" placeholder="Password">
+                  <button class="pure-button pure-button-primary">Send</button>
+                </fieldset>
+              </form>
+            </div>
+
+          </div>
+
+      </div>
+
+      <div class="pure-u-1-2">
+
+        <div class="new-email card">
+
+          <div class="card-header card-header-info">
+            <h2>Last Message Sent</h2>
+          </div>
+
+          <div class="card-body">
+
+            <div class="card-body-row">
+              <label for="recipient">Recipient</label><br/>
+              <span>{{recipient}}</span><br/>
+            </div>
+
+            <div class="card-body-row">
+              <label for="subject">Subject Line</label><br/>
+              <span>{{subject}}</span><br/>
+            </div>
+
+            <div class="card-body-row">
+              <label for="message">Message</label><br/>
+              <span>{{message}}</span><br/>
+            </div>
+
+            <div class="card-body-row">
+              <label>Attachment</label><br/>
+              <span>{{file.originalname}}</span><br/>
+            </div>
+
+            <div class="card-body-row">
+              <label>Saved to:</label>
+              <span>{{file.destination}}</span>
+            </div>
+
+            <div class="card-body-row">
+              <label>Filesize:</label>
+              <span>{{file.size}} bytes</span>
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+  </body>
+
+</html>
