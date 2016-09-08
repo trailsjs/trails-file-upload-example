@@ -66,7 +66,9 @@ module.exports = {
 }
 ```
 
-In `MessagePolicy`, we can use Express middleware to modify the request.  By default,
+In `MessagePolicy`, we can use Express middleware to modify the request.
+In this example, files are saved to an uploads directory within the project
+directory.
 
 ```js
   // api/policies/MessagePolicy.js
@@ -92,7 +94,7 @@ In `MessagePolicy`, we can use Express middleware to modify the request.  By def
 
 ```
 
-The result is that once the request object has arrived at `MessageController#send` `body` and `file` properties have been added by `multer.`
+Once the request object has arrived at `MessageController#send` `body` and `file` properties have been added by `multer.`
 
 ```js
   // api/controllers/MessageController.js
