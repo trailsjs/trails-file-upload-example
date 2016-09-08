@@ -7,7 +7,7 @@ TrailsMail is an imaginary email service that allows you to send an email with a
 ## Setup
 
 ```js
-  git clone git@github.com:trailsjs/trails-file-upload-example.git && c trails-file-upload-example
+  git clone git@github.com:trailsjs/trails-file-upload-example.git && cd trails-file-upload-example
   npm install
   npm start
 ```
