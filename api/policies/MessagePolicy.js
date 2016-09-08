@@ -12,12 +12,14 @@ const upload = multer({dest: 'uploads/'})
 module.exports = class MessagePolicy extends Policy {
 
   single (req, res, next) {
+
     upload.single('file')(req, res, err => {
       if (err) {
         this.log.info(err)
       }
       next()
     })
+
   }
 
 }
